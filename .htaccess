@@ -1,0 +1,35 @@
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
+
+RewriteEngine On RewriteCond %{REQUEST_URI} ^/index.php/ RewriteRule ^index.php/(.*) /$1 [R,L]
+
+Redirect 301 /?option=com_content&view=article&id=10&Itemid=12  http://www.iram.cl/tipo_de_cancer/cancer-de-colon/
+Redirect 301 /index.php?option=com_content&view=article&id=18&Itemid=20  http://www.iram.cl/tipo_de_cancer/leucemias-agudas/
+Redirect 301 /index.php?option=com_content&view=article&id=19&Itemid=21  http://www.iram.cl/tipo_de_cancer/leucemias-cronicas/
+Redirect 301 /index.php?option=com_content&view=article&id=17&Itemid=19  http://www.iram.cl/tipo_de_cancer/linfomas-no-hodgkin/
+Redirect 301 /index.php?option=com_content&view=article&id=14&Itemid=16  http://www.iram.cl/tipo_de_cancer/cancer-de-estomago/
+Redirect 301 /index.php?option=com_content&view=article&id=13&Itemid=15  http://www.iram.cl/tipo_de_cancer/cancer-de-higado/
+
+Redirect 301 /index.php?option=com_content&view=article&id=15&Itemid=17  http://www.iram.cl/tipo_de_cancer/cancer-de-pancreas/
+Redirect 301 /index.php?option=com_content&view=article&id=8&Itemid=10  http://www.iram.cl/tipo_de_cancer/cancer-de-piel/
+Redirect 301 /index.php?option=com_content&view=article&id=11&Itemid=13  http://www.iram.cl/tipo_de_cancer/tumores-ginecologicos/
+Redirect 301 /index.php?option=com_content&view=article&id=16&Itemid=18  http://www.iram.cl/tipo_de_cancer/linfomas-no-hodgkin/
+Redirect 301 /index.php?option=com_content&view=article&id=6&Itemid=8  http://www.iram.cl/tipo_de_cancer/cancer-de-pulmon/
+Redirect 301 /index.php?option=com_content&view=article&id=12&Itemid=14  http://www.iram.cl/tipo_de_cancer/cancer-de-boca-y-esofago/
+Redirect 301 /index.php?option=com_content&view=article&id=31&Itemid=6  http://www.iram.cl/contacto/
+Redirect 301 /index.php?option=com_content&view=article&id=45&Itemid=46  http://www.iram.cl/tratamiento/medicina-nuclear/
+Redirect 301 /index.php?option=com_content&view=article&id=7&Itemid=9  http://www.iram.cl/tipo_de_cancer/cancer-de-vejiga/
+Redirect 301 /index.php?option=com_content&view=article&id=46&Itemid=47  http://www.iram.cl/tratamiento/mamografia/
+Redirect 301 /index.php?option=com_content&view=article&id=3&Itemid=3  http://www.iram.cl/tipo_de_cancer/cancer-de-mamas/
+Redirect 301 /index.php?option=com_content&view=article&id=9&Itemid=11  http://www.iram.cl/tipo_de_cancer/cancer-de-prostata/
+Redirect 301 /index.php?option=com_content&view=article&id=42&Itemid=43  http://www.iram.cl/tratamiento/radioterapia/
+
